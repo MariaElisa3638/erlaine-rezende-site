@@ -1,0 +1,7 @@
+-pegar a fonte
+-melhorar a escrita
+-renomar imagens
+-descobrir que image é essa:<img class="img" src="img/rectangle-54.png" />
+- fazer a parte de comentários com rolagem
+-fazer pagina responsiva com o celular
+-arrumar arquivo colors.css
