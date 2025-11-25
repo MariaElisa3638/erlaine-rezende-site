@@ -5,3 +5,4 @@
 - fazer a parte de comentários com rolagem
 -fazer pagina responsiva com o celular
 -arrumar arquivo colors.css
+-inserir os 4 links direto para o youtube
