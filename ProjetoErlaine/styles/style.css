@@ -1,18 +1,19 @@
-.frame {
+@import url('./global.css');
+.container {
   overflow-x: hidden;
   width: 100%;
-  min-width: 1282px;
+  min-width: 1280px;
   min-height: 5944px;
   display: flex;
 }
 
-.frame .PGINA-DE-VENDAS {
+.container .PGINA-DE-VENDAS {
   width: 1320px;
   height: 5944px;
   position: relative;
 }
 
-.frame .rectangle {
+.container .rectangle {
   position: absolute;
   top: 0;
   left: 0;
@@ -21,7 +22,7 @@
   background-color: #ffffff;
 }
 
-.frame .div {
+.container .div {
   position: absolute;
   top: 1368px;
   left: 2px;
@@ -31,7 +32,7 @@
   border-radius: 66px 66px 0px 0px;
 }
 
-.frame .rectangle-2 {
+.container .rectangle-2 {
   position: absolute;
   top: 3238px;
   left: 2px;
@@ -41,7 +42,7 @@
   border-radius: 0px 0px 66px 66px;
 }
 
-.frame .rectangle-3 {
+.container .rectangle-3 {
   position: absolute;
   top: 0;
   left: 2px;
@@ -54,7 +55,7 @@
   );
 }
 
-.frame .img {
+.container .img {
   position: absolute;
   top: 0;
   left: 2px;
@@ -63,7 +64,7 @@
   background-blend-mode: multiply;
 }
 
-.frame .rounded-rectangle {
+.container .rounded-rectangle {
   position: absolute;
   top: 2708px;
   left: 68px;
@@ -73,7 +74,7 @@
   border-radius: 35px;
 }
 
-.frame .rounded-rectangle-2 {
+.container .rounded-rectangle-2 {
   position: absolute;
   top: 3047px;
   left: 68px;
@@ -83,7 +84,7 @@
   border-radius: 35px;
 }
 
-.frame .group {
+.container .group {
   position: absolute;
   top: 1964px;
   left: 62px;
@@ -94,13 +95,13 @@
   gap: 35px;
 }
 
-.frame .rounded-rectangle-3 {
+.container .rounded-rectangle-3 {
   height: 386px;
   background-color: #5fd1c6;
   border-radius: 35px;
 }
 
-.frame .rounded-rectangle-4 {
+.container .rounded-rectangle-4 {
   margin-left: 49px;
   width: 278px;
   height: 77px;
@@ -108,7 +109,7 @@
   border-radius: 35px;
 }
 
-.frame .group-2 {
+.container .group-2 {
   position: absolute;
   top: 1964px;
   left: 454px;
@@ -119,13 +120,13 @@
   gap: 35px;
 }
 
-.frame .rounded-rectangle-5 {
+.container .rounded-rectangle-5 {
   height: 386px;
   background-color: #60d2c6;
   border-radius: 35px;
 }
 
-.frame .group-3 {
+.container .group-3 {
   position: absolute;
   top: 1964px;
   left: 846px;
@@ -136,7 +137,7 @@
   gap: 35px;
 }
 
-.frame .entenda-mais-sobre-o {
+.container .entenda-mais-sobre-o {
   position: absolute;
   top: 2732px;
   left: 779px;
@@ -148,18 +149,18 @@
   line-height: 51.7px;
 }
 
-.frame .text-wrapper {
+.container .text-wrapper {
   font-weight: 500;
   letter-spacing: -1.41px;
 }
 
-.frame .span {
+.container .span {
   font-family: "Montserrat-Bold", Helvetica;
   font-weight: 700;
   letter-spacing: -1.41px;
 }
 
-.frame .p {
+.container .p {
   position: absolute;
   top: 883px;
   left: 764px;
@@ -173,7 +174,7 @@
   line-height: normal;
 }
 
-.frame .text-wrapper-2 {
+.container .text-wrapper-2 {
   top: 1672px;
   left: 145px;
   width: 352px;
@@ -186,7 +187,7 @@
   line-height: normal;
 }
 
-.frame .o-melhor-e-mais {
+.container .o-melhor-e-mais {
   position: absolute;
   top: 381px;
   left: 732px;
@@ -199,7 +200,7 @@
   line-height: normal;
 }
 
-.frame .text-wrapper-3 {
+.container .text-wrapper-3 {
   top: 2919px;
   left: 779px;
   width: 405px;
@@ -213,7 +214,7 @@
   line-height: normal;
 }
 
-.frame .rectangle-4 {
+.container .rectangle-4 {
   position: absolute;
   top: 5732px;
   left: 0;
@@ -222,7 +223,7 @@
   background-color: #0b5b54;
 }
 
-.frame .instituto {
+.container .instituto {
   position: absolute;
   top: 5777px;
   left: 198px;
@@ -236,7 +237,7 @@
   line-height: normal;
 }
 
-.frame .text-wrapper-4 {
+.container .text-wrapper-4 {
   font-family: "Montserrat-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
@@ -244,12 +245,12 @@
   letter-spacing: 0;
 }
 
-.frame .text-wrapper-5 {
+.container .text-wrapper-5 {
   font-family: "Montserrat-SemiBold", Helvetica;
   font-weight: 600;
 }
 
-.frame .text-wrapper-6 {
+.container .text-wrapper-6 {
   position: absolute;
   top: 5887px;
   left: 478px;
@@ -263,7 +264,7 @@
   line-height: normal;
 }
 
-.frame .rectangle-5 {
+.container .rectangle-5 {
   position: absolute;
   top: 226px;
   left: 389px;
@@ -274,7 +275,7 @@
   background-blend-mode: soft-light;
 }
 
-.frame .rectangle-6 {
+.container .rectangle-6 {
   position: absolute;
   top: 100px;
   left: 216px;
@@ -285,7 +286,7 @@
   background-blend-mode: soft-light;
 }
 
-.frame .rectangle-7 {
+.container .rectangle-7 {
   position: absolute;
   top: 687px;
   left: 122px;
@@ -295,7 +296,7 @@
   border-radius: 19.35px;
 }
 
-.frame .rectangle-8 {
+.container .rectangle-8 {
   position: absolute;
   top: 878px;
   left: 261px;
@@ -305,7 +306,7 @@
   border-radius: 19.35px;
 }
 
-.frame .rectangle-9 {
+.container .rectangle-9 {
   position: absolute;
   top: 303px;
   left: 184px;
@@ -316,7 +317,7 @@
   background-blend-mode: soft-light;
 }
 
-.frame .rectangle-10 {
+.container .rectangle-10 {
   position: absolute;
   top: 1512px;
   left: 135px;
@@ -326,7 +327,7 @@
   border-radius: 21.9px;
 }
 
-.frame .rectangle-11 {
+.container .rectangle-11 {
   position: absolute;
   top: 376px;
   left: 219px;
@@ -337,7 +338,7 @@
   background-blend-mode: soft-light;
 }
 
-.frame .rectangle-12 {
+.container .rectangle-12 {
   position: absolute;
   top: 376px;
   left: 136px;
@@ -348,7 +349,7 @@
   background-blend-mode: soft-light;
 }
 
-.frame .rectangle-13 {
+.container .rectangle-13 {
   position: absolute;
   top: 455px;
   left: 218px;
@@ -359,7 +360,7 @@
   background-blend-mode: soft-light;
 }
 
-.frame .rectangle-14 {
+.container .rectangle-14 {
   position: absolute;
   top: 420px;
   left: 506px;
@@ -370,7 +371,7 @@
   background-blend-mode: soft-light;
 }
 
-.frame .rectangle-15 {
+.container .rectangle-15 {
   position: absolute;
   top: 492px;
   left: 530px;
@@ -381,7 +382,7 @@
   background-blend-mode: soft-light;
 }
 
-.frame .MG {
+.container .MG {
   position: absolute;
   top: 75px;
   left: 252px;
@@ -391,7 +392,7 @@
   object-fit: cover;
 }
 
-.frame .cuidadora-de-idosos {
+.container .cuidadora-de-idosos {
   position: absolute;
   top: 158px;
   left: 731px;
@@ -403,7 +404,7 @@
   line-height: 59.8px;
 }
 
-.frame .conhe-a-erlaine {
+.container .conhe-a-erlaine {
   position: absolute;
   top: 726px;
   left: 756px;
@@ -415,7 +416,7 @@
   line-height: 54.7px;
 }
 
-.frame .rectangle-16 {
+.container .rectangle-16 {
   position: absolute;
   top: 289px;
   left: 731px;
@@ -425,7 +426,7 @@
   border-radius: 7px;
 }
 
-.frame .text-wrapper-7 {
+.container .text-wrapper-7 {
   position: absolute;
   top: 299px;
   left: 785px;
@@ -439,7 +440,7 @@
   white-space: nowrap;
 }
 
-.frame .rectangle-17 {
+.container .rectangle-17 {
   position: absolute;
   top: 726px;
   left: 172px;
@@ -447,7 +448,7 @@
   height: 430px;
 }
 
-.frame .rectangle-18 {
+.container .rectangle-18 {
   position: absolute;
   top: 1277px;
   left: 219px;
@@ -461,7 +462,7 @@
   );
 }
 
-.frame .rounded-rectangle-6 {
+.container .rounded-rectangle-6 {
   position: absolute;
   top: 1484px;
   left: 534px;
@@ -469,7 +470,7 @@
   height: 375px;
 }
 
-.frame .para-quem-o-curso {
+.container .para-quem-o-curso {
   position: absolute;
   top: 1521px;
   left: 167px;
@@ -481,7 +482,7 @@
   line-height: 52.6px;
 }
 
-.frame .text-wrapper-8 {
+.container .text-wrapper-8 {
   position: absolute;
   top: 2414px;
   left: 198px;
@@ -495,7 +496,7 @@
   white-space: nowrap;
 }
 
-.frame .text-wrapper-9 {
+.container .text-wrapper-9 {
   left: 590px;
   position: absolute;
   top: 2414px;
@@ -509,7 +510,7 @@
   white-space: nowrap;
 }
 
-.frame .text-wrapper-10 {
+.container .text-wrapper-10 {
   left: 982px;
   position: absolute;
   top: 2414px;
@@ -523,7 +524,7 @@
   white-space: nowrap;
 }
 
-.frame .erlaine {
+.container .erlaine {
   position: absolute;
   top: 2086px;
   left: 52px;
@@ -533,7 +534,7 @@
   object-fit: cover;
 }
 
-.frame .erlaine-2 {
+.container .erlaine-2 {
   position: absolute;
   top: 2063px;
   left: 830px;
@@ -543,7 +544,7 @@
   object-fit: cover;
 }
 
-.frame .rectangle-19 {
+.container .rectangle-19 {
   position: absolute;
   top: 2027px;
   left: 122px;
@@ -553,7 +554,7 @@
   border-radius: 5.49px;
 }
 
-.frame .rectangle-20 {
+.container .rectangle-20 {
   position: absolute;
   top: 2054px;
   left: 531px;
@@ -563,7 +564,7 @@
   border-radius: 4.86px;
 }
 
-.frame .n-o-deixe-a {
+.container .n-o-deixe-a {
   position: absolute;
   top: 1994px;
   left: 134px;
@@ -576,21 +577,21 @@
   line-height: 34.9px;
 }
 
-.frame .text-wrapper-11 {
+.container .text-wrapper-11 {
   font-family: "Montserrat-MediumItalic", Helvetica;
   font-weight: 500;
   font-style: italic;
   letter-spacing: -0.76px;
 }
 
-.frame .text-wrapper-12 {
+.container .text-wrapper-12 {
   font-family: "Montserrat-BoldItalic", Helvetica;
   font-weight: 700;
   font-style: italic;
   letter-spacing: -0.76px;
 }
 
-.frame .quer-aprender-dicas {
+.container .quer-aprender-dicas {
   position: absolute;
   top: 1982px;
   left: 520px;
@@ -604,7 +605,7 @@
   line-height: 34.9px;
 }
 
-.frame .o-que-o-cuidador-de {
+.container .o-que-o-cuidador-de {
   position: absolute;
   top: 1985px;
   left: 912px;
@@ -618,7 +619,7 @@
   line-height: 28.5px;
 }
 
-.frame .text-wrapper-13 {
+.container .text-wrapper-13 {
   position: absolute;
   top: 2063px;
   left: 546px;
@@ -633,7 +634,7 @@
   white-space: nowrap;
 }
 
-.frame .erlaine-3 {
+.container .erlaine-3 {
   position: absolute;
   top: 2072px;
   left: 428px;
@@ -643,7 +644,7 @@
   object-fit: cover;
 }
 
-.frame .vector {
+.container .vector {
   position: absolute;
   width: 4.22%;
   height: 0;
@@ -651,7 +652,7 @@
   left: 83.26%;
 }
 
-.frame .vector-2 {
+.container .vector-2 {
   position: absolute;
   width: 4.22%;
   height: 0;
@@ -659,7 +660,7 @@
   left: 68.48%;
 }
 
-.frame .vector-3 {
+.container .vector-3 {
   position: absolute;
   width: 2.65%;
   height: 0;
@@ -667,7 +668,7 @@
   left: 88.64%;
 }
 
-.frame .vector-4 {
+.container .vector-4 {
   position: absolute;
   width: 2.65%;
   height: 0;
@@ -675,7 +676,7 @@
   left: 65.83%;
 }
 
-.frame .CERTIFICADO {
+.container .logo-01 {
   position: absolute;
   top: 26px;
   left: 41px;
@@ -685,7 +686,7 @@
   object-fit: cover;
 }
 
-.frame .logo-erlaine-rezende {
+.container .logo-erlaine-rezende {
   position: absolute;
   top: 502px;
   left: 1103px;
@@ -695,7 +696,7 @@
   object-fit: cover;
 }
 
-.frame .group-4 {
+.container .group-4 {
   position: absolute;
   top: 3846px;
   left: 79px;
@@ -703,7 +704,7 @@
   height: 466px;
 }
 
-.frame .rectangle-21 {
+.container .rectangle-21 {
   position: absolute;
   top: 108px;
   left: 0;
@@ -715,7 +716,7 @@
   border-color: #5fd1c6;
 }
 
-.frame .rectangle-22 {
+.container .rectangle-22 {
   position: absolute;
   top: 0;
   left: 207px;
@@ -727,7 +728,7 @@
   border-color: #5fd1c6;
 }
 
-.frame .veja-o-que-est-o {
+.container .veja-o-que-est-o {
   position: absolute;
   top: 32px;
   left: 275px;
@@ -739,18 +740,18 @@
   line-height: normal;
 }
 
-.frame .text-wrapper-14 {
+.container .text-wrapper-14 {
   font-weight: 500;
   letter-spacing: -0.64px;
 }
 
-.frame .text-wrapper-15 {
+.container .text-wrapper-15 {
   font-family: "Montserrat-ExtraBold", Helvetica;
   font-weight: 800;
   letter-spacing: -0.64px;
 }
 
-.frame .group-5 {
+.container .group-5 {
   position: absolute;
   top: 204px;
   left: 89px;
@@ -758,7 +759,7 @@
   height: 155px;
 }
 
-.frame .text-wrapper-16 {
+.container .text-wrapper-16 {
   position: absolute;
   top: 0;
   left: 8px;
@@ -771,7 +772,7 @@
   line-height: normal;
 }
 
-.frame .ellipse {
+.container .ellipse {
   position: absolute;
   top: 107px;
   left: 0;
@@ -780,7 +781,7 @@
   object-fit: cover;
 }
 
-.frame .text-wrapper-17 {
+.container .text-wrapper-17 {
   position: absolute;
   top: 123px;
   left: 59px;
@@ -792,7 +793,7 @@
   line-height: normal;
 }
 
-.frame .group-6 {
+.container .group-6 {
   position: absolute;
   top: 204px;
   left: 433px;
@@ -800,7 +801,7 @@
   height: 155px;
 }
 
-.frame .group-7 {
+.container .group-7 {
   position: absolute;
   top: 204px;
   left: 778px;
@@ -808,7 +809,7 @@
   height: 155px;
 }
 
-.frame .dribbble-light {
+.container .dribbble-light {
   position: absolute;
   width: 20px;
   height: 11px;
@@ -818,13 +819,13 @@
   transform: rotate(90deg);
 }
 
-.frame .icons {
+.container .icons {
   flex: 1;
   width: 20px;
   position: relative;
 }
 
-.frame .arrow-up {
+.container .arrow-up {
   position: absolute;
   width: 100.00%;
   height: 100%;
@@ -833,7 +834,7 @@
   transform: rotate(-90deg);
 }
 
-.frame .icons-wrapper {
+.container .icons-wrapper {
   position: absolute;
   width: 20px;
   height: 11px;
@@ -843,7 +844,7 @@
   transform: rotate(-90deg);
 }
 
-.frame .arrow-up-2 {
+.container .arrow-up-2 {
   position: absolute;
   width: 100.00%;
   height: 100%;
@@ -852,7 +853,7 @@
   transform: rotate(90deg);
 }
 
-.frame .group-8 {
+.container .group-8 {
   position: absolute;
   top: 438px;
   left: 531px;
@@ -862,21 +863,21 @@
   gap: 5px;
 }
 
-.frame .ellipse-2 {
+.container .ellipse-2 {
   background-color: #60d2c6;
   width: 9px;
   height: 9px;
   border-radius: 4.5px;
 }
 
-.frame .ellipse-3 {
+.container .ellipse-3 {
   background-color: #0b5b54;
   width: 9px;
   height: 9px;
   border-radius: 4.5px;
 }
 
-.frame .rectangle-23 {
+.container .rectangle-23 {
   position: absolute;
   top: 4462px;
   left: 303px;
@@ -887,7 +888,7 @@
   border: 3px solid;
 }
 
-.frame .group-9 {
+.container .group-9 {
   position: absolute;
   top: 3328px;
   left: 68px;
@@ -895,7 +896,7 @@
   height: 419px;
 }
 
-.frame .rectangle-24 {
+.container .rectangle-24 {
   position: absolute;
   top: 119px;
   left: 0;
@@ -905,7 +906,7 @@
   border-radius: 14.4px;
 }
 
-.frame .rectangle-25 {
+.container .rectangle-25 {
   position: absolute;
   top: 225px;
   left: 0;
@@ -915,7 +916,7 @@
   border-radius: 14.4px;
 }
 
-.frame .rectangle-26 {
+.container .rectangle-26 {
   position: absolute;
   top: 119px;
   left: 567px;
@@ -925,7 +926,7 @@
   border-radius: 14.4px;
 }
 
-.frame .rectangle-27 {
+.container .rectangle-27 {
   position: absolute;
   top: 225px;
   left: 567px;
@@ -935,7 +936,7 @@
   border-radius: 14.4px;
 }
 
-.frame .rectangle-28 {
+.container .rectangle-28 {
   position: absolute;
   top: 331px;
   left: 270px;
@@ -945,7 +946,7 @@
   border-radius: 14.4px;
 }
 
-.frame .mais-de-aulas-ao {
+.container .mais-de-aulas-ao {
   position: absolute;
   top: 134px;
   left: 114px;
@@ -959,20 +960,20 @@
   line-height: 29.3px;
 }
 
-.frame .text-wrapper-18 {
+.container .text-wrapper-18 {
   font-family: "Montserrat-Italic", Helvetica;
   font-style: italic;
   letter-spacing: -0.31px;
 }
 
-.frame .text-wrapper-19 {
+.container .text-wrapper-19 {
   font-family: "Montserrat-SemiBoldItalic", Helvetica;
   font-weight: 600;
   font-style: italic;
   letter-spacing: -0.31px;
 }
 
-.frame .suporte-e-contato {
+.container .suporte-e-contato {
   position: absolute;
   top: 349px;
   left: 412px;
@@ -986,7 +987,7 @@
   line-height: 27.5px;
 }
 
-.frame .comunidade-exclusiva {
+.container .comunidade-exclusiva {
   position: absolute;
   top: 236px;
   left: 662px;
@@ -1000,7 +1001,7 @@
   line-height: normal;
 }
 
-.frame .text-wrapper-20 {
+.container .text-wrapper-20 {
   position: absolute;
   top: 252px;
   left: 127px;
@@ -1016,7 +1017,7 @@
   white-space: nowrap;
 }
 
-.frame .element-m-dulos-com-aulas {
+.container .element-m-dulos-com-aulas {
   position: absolute;
   top: 134px;
   left: 697px;
@@ -1030,7 +1031,7 @@
   line-height: normal;
 }
 
-.frame .vector-5 {
+.container .vector-5 {
   position: absolute;
   width: 4.11%;
   height: 10.97%;
@@ -1038,7 +1039,7 @@
   left: 92.79%;
 }
 
-.frame .vector-6 {
+.container .vector-6 {
   position: absolute;
   width: 4.11%;
   height: 10.97%;
@@ -1046,7 +1047,7 @@
   left: 92.79%;
 }
 
-.frame .vector-7 {
+.container .vector-7 {
   position: absolute;
   width: 4.11%;
   height: 10.97%;
@@ -1054,7 +1055,7 @@
   left: 66.26%;
 }
 
-.frame .vector-8 {
+.container .vector-8 {
   position: absolute;
   width: 4.11%;
   height: 10.97%;
@@ -1062,7 +1063,7 @@
   left: 41.62%;
 }
 
-.frame .rectangle-29 {
+.container .rectangle-29 {
   position: absolute;
   top: 0;
   left: calc(50.00% - 346px);
@@ -1074,7 +1075,7 @@
   border-color: #5fd1c6;
 }
 
-.frame .vector-9 {
+.container .vector-9 {
   position: absolute;
   width: 4.11%;
   height: 10.97%;
@@ -1082,7 +1083,7 @@
   left: 41.62%;
 }
 
-.frame .text-wrapper-21 {
+.container .text-wrapper-21 {
   position: absolute;
   top: 23px;
   left: 261px;
@@ -1094,7 +1095,7 @@
   line-height: normal;
 }
 
-.frame .erlaine-4 {
+.container .erlaine-4 {
   position: absolute;
   top: 2607px;
   left: 94px;
@@ -1103,7 +1104,7 @@
   aspect-ratio: 1.33;
 }
 
-.frame .clique-e-desbloqueie {
+.container .clique-e-desbloqueie {
   position: absolute;
   top: 3087px;
   left: 137px;
@@ -1117,17 +1118,17 @@
   white-space: nowrap;
 }
 
-.frame .text-wrapper-22 {
+.container .text-wrapper-22 {
   letter-spacing: -0.48px;
 }
 
-.frame .text-wrapper-23 {
+.container .text-wrapper-23 {
   font-family: "Montserrat-Bold", Helvetica;
   font-weight: 700;
   letter-spacing: -0.48px;
 }
 
-.frame .group-10 {
+.container .group-10 {
   position: absolute;
   top: 4472px;
   left: 515px;
@@ -1135,7 +1136,7 @@
   height: 71px;
 }
 
-.frame .text-wrapper-24 {
+.container .text-wrapper-24 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1149,7 +1150,7 @@
   line-height: normal;
 }
 
-.frame .vector-10 {
+.container .vector-10 {
   position: absolute;
   width: 15.56%;
   height: 81.53%;
@@ -1157,7 +1158,7 @@
   left: 83.66%;
 }
 
-.frame .group-11 {
+.container .group-11 {
   position: absolute;
   top: 4578px;
   left: 78px;
@@ -1165,7 +1166,7 @@
   height: 520px;
 }
 
-.frame .rectangle-30 {
+.container .rectangle-30 {
   position: absolute;
   top: 1px;
   left: 0;
@@ -1176,7 +1177,7 @@
   box-shadow: 0px 10px 7.7px 2px #00000014;
 }
 
-.frame .rectangle-31 {
+.container .rectangle-31 {
   position: absolute;
   top: 0;
   left: 1px;
@@ -1186,7 +1187,7 @@
   border-radius: 25px 25px 0px 0px;
 }
 
-.frame .rectangle-32 {
+.container .rectangle-32 {
   position: absolute;
   top: 0;
   left: 382px;
@@ -1197,7 +1198,7 @@
   box-shadow: 0px 10px 7.7px 2px #00000014;
 }
 
-.frame .rectangle-33 {
+.container .rectangle-33 {
   position: absolute;
   top: 0;
   left: 382px;
@@ -1207,7 +1208,7 @@
   border-radius: 25px 25px 0px 0px;
 }
 
-.frame .rectangle-34 {
+.container .rectangle-34 {
   position: absolute;
   top: 0;
   left: 764px;
@@ -1218,7 +1219,7 @@
   box-shadow: 0px 10px 7.7px 2px #00000014;
 }
 
-.frame .rectangle-35 {
+.container .rectangle-35 {
   position: absolute;
   top: 0;
   left: 764px;
@@ -1228,7 +1229,7 @@
   border-radius: 25px 25px 0px 0px;
 }
 
-.frame .text-wrapper-25 {
+.container .text-wrapper-25 {
   position: absolute;
   top: 40px;
   left: 49px;
@@ -1243,7 +1244,7 @@
   white-space: nowrap;
 }
 
-.frame .text-wrapper-26 {
+.container .text-wrapper-26 {
   position: absolute;
   top: 40px;
   left: 433px;
@@ -1258,7 +1259,7 @@
   white-space: nowrap;
 }
 
-.frame .text-wrapper-27 {
+.container .text-wrapper-27 {
   position: absolute;
   top: 81px;
   left: 68px;
@@ -1273,7 +1274,7 @@
   line-height: normal;
 }
 
-.frame .text-wrapper-28 {
+.container .text-wrapper-28 {
   position: absolute;
   top: 81px;
   left: 467px;
@@ -1288,7 +1289,7 @@
   line-height: normal;
 }
 
-.frame .text-wrapper-29 {
+.container .text-wrapper-29 {
   position: absolute;
   top: 43px;
   left: 849px;
@@ -1302,7 +1303,7 @@
   line-height: normal;
 }
 
-.frame .element-de-r {
+.container .element-de-r {
   left: 114px;
   position: absolute;
   top: 323px;
@@ -1315,24 +1316,24 @@
   line-height: normal;
 }
 
-.frame .text-wrapper-30 {
+.container .text-wrapper-30 {
   font-weight: 300;
   color: #0b5b54;
 }
 
-.frame .text-wrapper-31 {
+.container .text-wrapper-31 {
   font-family: "Montserrat-Bold", Helvetica;
   font-weight: 700;
   color: #0b5b54;
 }
 
-.frame .text-wrapper-32 {
+.container .text-wrapper-32 {
   font-family: "Montserrat-ExtraBold", Helvetica;
   font-weight: 800;
   color: #0b5b54;
 }
 
-.frame .element-x-de-r {
+.container .element-x-de-r {
   left: 497px;
   position: absolute;
   top: 323px;
@@ -1345,7 +1346,7 @@
   line-height: normal;
 }
 
-.frame .de-r-por-r {
+.container .de-r-por-r {
   left: 62px;
   position: absolute;
   top: 202px;
@@ -1358,32 +1359,32 @@
   line-height: normal;
 }
 
-.frame .text-wrapper-33 {
+.container .text-wrapper-33 {
   font-weight: 700;
   color: #41a79d;
   letter-spacing: -0.57px;
 }
 
-.frame .text-wrapper-34 {
+.container .text-wrapper-34 {
   font-family: "Montserrat-Italic", Helvetica;
   font-style: italic;
   color: #41a79d;
   letter-spacing: -0.57px;
 }
 
-.frame .text-wrapper-35 {
+.container .text-wrapper-35 {
   font-family: "Montserrat-Regular", Helvetica;
   color: #0b5b54;
   letter-spacing: -0.57px;
 }
 
-.frame .text-wrapper-36 {
+.container .text-wrapper-36 {
   font-weight: 700;
   color: #0b5b54;
   letter-spacing: -0.57px;
 }
 
-.frame .de-r-por-r-2 {
+.container .de-r-por-r-2 {
   left: 444px;
   position: absolute;
   top: 202px;
@@ -1396,7 +1397,7 @@
   line-height: normal;
 }
 
-.frame .de-r-por-r-3 {
+.container .de-r-por-r-3 {
   left: 834px;
   position: absolute;
   top: 202px;
@@ -1409,7 +1410,7 @@
   line-height: normal;
 }
 
-.frame .rounded-rectangle-7 {
+.container .rounded-rectangle-7 {
   position: absolute;
   top: 410px;
   left: 43px;
@@ -1419,7 +1420,7 @@
   border-radius: 31px;
 }
 
-.frame .text-wrapper-37 {
+.container .text-wrapper-37 {
   position: absolute;
   top: 439px;
   left: 140px;
@@ -1433,7 +1434,7 @@
   white-space: nowrap;
 }
 
-.frame .rounded-rectangle-8 {
+.container .rounded-rectangle-8 {
   position: absolute;
   top: 410px;
   left: 807px;
@@ -1443,7 +1444,7 @@
   border-radius: 31px;
 }
 
-.frame .text-wrapper-38 {
+.container .text-wrapper-38 {
   left: 904px;
   position: absolute;
   top: 439px;
@@ -1457,7 +1458,7 @@
   white-space: nowrap;
 }
 
-.frame .rounded-rectangle-9 {
+.container .rounded-rectangle-9 {
   position: absolute;
   top: 410px;
   left: 425px;
@@ -1467,7 +1468,7 @@
   border-radius: 31px;
 }
 
-.frame .text-wrapper-39 {
+.container .text-wrapper-39 {
   left: 522px;
   position: absolute;
   top: 439px;
@@ -1481,7 +1482,7 @@
   white-space: nowrap;
 }
 
-.frame .rectangle-36 {
+.container .rectangle-36 {
   position: absolute;
   top: 223px;
   left: 67px;
@@ -1492,7 +1493,7 @@
   transform: rotate(-8.00deg);
 }
 
-.frame .rectangle-37 {
+.container .rectangle-37 {
   position: absolute;
   top: 223px;
   left: 449px;
@@ -1503,7 +1504,7 @@
   transform: rotate(-8.00deg);
 }
 
-.frame .rectangle-38 {
+.container .rectangle-38 {
   position: absolute;
   top: 223px;
   left: 837px;
@@ -1514,7 +1515,7 @@
   transform: rotate(-8.00deg);
 }
 
-.frame .group-12 {
+.container .group-12 {
   position: absolute;
   top: 5247px;
   left: 99px;
@@ -1522,7 +1523,7 @@
   height: 435px;
 }
 
-.frame .rectangle-39 {
+.container .rectangle-39 {
   position: absolute;
   top: 91px;
   left: 0;
@@ -1532,7 +1533,7 @@
   border-radius: 42.69px 0px 0px 42.69px;
 }
 
-.frame .rectangle-40 {
+.container .rectangle-40 {
   position: absolute;
   top: 91px;
   left: 544px;
@@ -1542,7 +1543,7 @@
   border-radius: 0px 42.69px 42.69px 0px;
 }
 
-.frame .ingresso-para-o {
+.container .ingresso-para-o {
   position: absolute;
   top: 218px;
   left: 83px;
@@ -1556,17 +1557,17 @@
   line-height: normal;
 }
 
-.frame .text-wrapper-40 {
+.container .text-wrapper-40 {
   letter-spacing: -0.19px;
 }
 
-.frame .text-wrapper-41 {
+.container .text-wrapper-41 {
   font-family: "Montserrat-Bold", Helvetica;
   font-weight: 700;
   letter-spacing: -0.19px;
 }
 
-.frame .kit-exclusivo-com {
+.container .kit-exclusivo-com {
   position: absolute;
   top: 220px;
   left: 613px;
@@ -1580,17 +1581,17 @@
   line-height: normal;
 }
 
-.frame .text-wrapper-42 {
+.container .text-wrapper-42 {
   font-weight: 700;
   letter-spacing: -0.19px;
 }
 
-.frame .text-wrapper-43 {
+.container .text-wrapper-43 {
   font-family: "Montserrat-Regular", Helvetica;
   letter-spacing: -0.19px;
 }
 
-.frame .rectangle-41 {
+.container .rectangle-41 {
   position: absolute;
   top: 0;
   left: 181px;
@@ -1600,7 +1601,7 @@
   border-radius: 20px 20px 0px 0px;
 }
 
-.frame .rectangle-42 {
+.container .rectangle-42 {
   position: absolute;
   top: 344px;
   left: 321px;
@@ -1610,7 +1611,7 @@
   border-radius: 29px;
 }
 
-.frame .text-wrapper-44 {
+.container .text-wrapper-44 {
   top: 160px;
   left: 61px;
   width: 402px;
@@ -1626,7 +1627,7 @@
   line-height: normal;
 }
 
-.frame .text-wrapper-45 {
+.container .text-wrapper-45 {
   top: 158px;
   left: 568px;
   width: 451px;
@@ -1641,7 +1642,7 @@
   line-height: normal;
 }
 
-.frame .text-wrapper-46 {
+.container .text-wrapper-46 {
   position: absolute;
   top: 16px;
   left: 445px;
@@ -1653,7 +1654,7 @@
   line-height: normal;
 }
 
-.frame .text-wrapper-47 {
+.container .text-wrapper-47 {
   position: absolute;
   top: 370px;
   left: 388px;
