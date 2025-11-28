@@ -1,8 +1,8 @@
-
-//Arrumar o arquivo depois
 @font-face {
     font-family: "Sicoob sans";
+    /*Trocar*/
     src: url('fonts/SicoobSansVariable.ttf');
+    /*Trocar*/
     font-display: swap;
     font-weight: 100 1000;
     font-stretch: 80% 100%;
@@ -11,7 +11,9 @@
 
 @font-face {
     font-family: "Sicoob script";
+    /*Trocar*/
     src: url('fonts/SicoobScriptVariable.ttf');
+    /*Trocar*/
     font-display: swap;
     font-weight: 100 1000;
     font-stretch: 80% 100%;
@@ -19,58 +21,82 @@
 }
 
 :root {
-    --amarelo-100: #efa91e;
-    --laranja-100: #f68140;
-    --verdee-100: #1d5a6d;
-    --verdee-200: #005566;
-    --verdee-300: #145467;
-    --verdee-400: #004452;
-    --verdee: #003641;
+    --white: #FFFFFF;
+    --teal-light: #e7fffc;
+    --teal-pale-200: #c2eee9;
+    --teal-pale: #c6f7ed;
+    --teal-medium: #60d2c6;
+    --teal-light-100: #5fd1c6;
+    --teal-light-200: #6acdc4;
+    --teal-vibrant: #0ad8c8;
+    --teal-bright: #00ae9d;
+    --teal-primary: #299b90;
+    --teal-600: #41a79d;
+    --cyan-bright: #44ffec;
+    --teal-dark-200: #10a394;
+    --teal-dark-100: #0b5b54;
+    --black-transparent-8: #00000014;
+    --gray-medium-100: #8e8e8e;
+    --gray-warm-100: #837c7c;
+
+
+
+
+
+
+
+
+    
+    --yellow-100: #efa91e;
+    --orange-100: #f68140;
+    --dark-green-100: #1d5a6d;
+    --dark-green-200: #005566;
+    --dark-green-300: #145467;
+    --dark-green-400: #004452;
+    --dark-green: #003641;
     /*sicoob*/
-    --verdee-500: #002A33;
-    --verdee-600: #001E24;
-    --verdem-200: #92D421;
-    --verdem-300: #86C21E;
-    --verdem: #7DB61C;
-    --verdem-500: #73A81A;
-    --verdem-600: #679617;
-    --verdec-200: #EAF500;
-    --verdec-300: #D7E000;
-    --verdec: #C9D200;
+    --dark-green-500: #002A33;
+    --dark-green-600: #001E24;
+    --medium-green-200: #92D421;
+    --medium-green-300: #86C21E;
+    --medium-green: #7DB61C;
+    --medium-green-500: #73A81A;
+    --medium-green-600: #679617;
+    --light-green-200: #EAF500;
+    --light-green-300: #D7E000;
+    --light-green: #C9D200;
     /*sicoob*/
-    --verdec-500: #B9C200;
-    --verdec-600: #A6AD00;
-    --verdec-700: #b8d38c;
-    --verdet-200: #00c8b4;
-    --verdet-300: #00bdab;
-    --verdet: #00AE9D;
-    /*sicoob*/
-    --verdet-500: #00a494;
-    --verdet-600: #009a8b;
-    --verdet-700: #006633;
-    --vermelho: #d33f48;
-    --vermelho-100: #ee857b;
-    --vermelho-200: #e66f6a;
-    --vermelho-300: #de5a59;
-    --roxo: #49479D;
-    /*sicoob*/
-    --roxo-200: #5956B3;
-    --roxo-300: #4E4CA9;
-    --roxo-500: #41408C;
-    --roxo-600: #3B397E;
-    --branco: #FFFFFF;
-    --cinza-100: #f0f0f0;
-    --cinza-200: #F2F2F2;
-    --cinza-300: #E9E9E9;
-    --cinza-400: #D1D1D1;
-    --cinza-500: #B4B4B4;
-    --cinza-600: #9d9d9d;
-    --cinza-700: #6e6e6e;
-    --cinza-800: #5E5E5E;
-    --cinza-900: #333;
-    --cinza-claro: #eee;
-    --gelo: #f4f5f1;
-    --gelo-claro: #f6f7f4;
-    --preto: #000;
-    --transparente: rgba(0, 0, 0, 0);
+    --light-green-500: #B9C200;
+    --light-green-600: #A6AD00;
+    --light-green-700: #b8d38c;
+    --teal: #299b90;
+    --teal-100: #5fd1c6;
+    --teal-200: #60d2c6;
+    --teal-600: #41a79d;
+    --teal-800: #009a8b;
+    --teal-700: #006633;
+    --red: #d33f48;
+    --red-100: #ee857b;
+    --red-200: #e66f6a;
+    --red-300: #de5a59;
+    --purple: #49479D;
+    --purple-200: #5956B3;
+    --purple-300: #4E4CA9;
+    --purple-500: #41408C;
+    --purple-600: #3B397E;
+
+    --gray-100: #f0f0f0;
+    --gray-200: #F2F2F2;
+    --gray-300: #E9E9E9;
+    --gray-400: #D1D1D1;
+    --gray-500: #B4B4B4;
+    --gray-600: #9d9d9d;
+    --gray-700: #6e6e6e;
+    --gray-800: #5E5E5E;
+    --gray-900: #333;
+    --light-gray: #eee;
+    --ice: #f4f5f1;
+    --light-ice: #f6f7f4;
+    --black: #000;
+    --transparent: rgba(0, 0, 0, 0);
 }
