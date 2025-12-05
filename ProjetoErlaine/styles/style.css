@@ -4,31 +4,35 @@
 .container {
   overflow-x: hidden;
   width: 100%;
-  min-width: 1280px;
-  min-height: 5944px;
+  min-height: 100vh;
   display: flex;
+  justify-content: center; /* Centralizar horizontalmente */
 }
 
-.container .PGINA-DE-VENDAS {
-  width: 1320px;
-  height: 5944px;
+.container .landing-page {
+  width: 100%;
+  max-width: 1320px; /* Largura máxima para não ficar muito esticado */
+  min-height: 100vh;
   position: relative;
+  margin: 0 auto; /* Centralizar */
 }
 
+/* Backgrounds ocupam toda a tela */
 .container .rectangle {
-  position: absolute;
+  position: fixed; /* Fixo para ocupar toda tela */
   top: 0;
   left: 0;
-  width: 1280px;
-  height: 5944px;
+  width: 100vw; /* Largura da viewport */
+  min-height: 100vh;
   background-color: var(--white);
+  z-index: -1; /* Atrás do conteúdo */
 }
 
 .container .div {
   position: absolute;
   top: 1368px;
-  left: 2px;
-  width: 1280px;
+  left: 0;
+  width: 100%;
   height: 1222px;
   background-color: var(--teal-primary);
   border-radius: 66px 66px 0px 0px;
@@ -37,8 +41,8 @@
 .container .rectangle-2 {
   position: absolute;
   top: 3238px;
-  left: 2px;
-  width: 1280px;
+  left: 0;
+  width: 100%;
   height: 1172px;
   background-color: var(--teal-light);
   border-radius: 0px 0px 66px 66px;
@@ -47,8 +51,8 @@
 .container .rectangle-3 {
   position: absolute;
   top: 0;
-  left: 2px;
-  width: 1280px;
+  left: 0;
+  width: 100%;
   height: 594px;
   background: linear-gradient(270deg,
       rgba(49, 161, 150, 1) 0%,
@@ -58,11 +62,12 @@
 .container .img {
   position: absolute;
   top: 0;
-  left: 2px;
-  width: 1280px;
+  left: 0;
+  width: 100%;
   height: 594px;
   background-blend-mode: multiply;
 }
+
 
 .container .rounded-rectangle {
   position: absolute;
@@ -216,7 +221,7 @@
   position: absolute;
   top: 5732px;
   left: 0;
-  width: 1282px;
+  width: 100%;
   height: 212px;
   background-color: var(--teal-dark-100);
 }
@@ -462,7 +467,7 @@
 .container .para-quem-o-curso {
   position: absolute;
   top: 1521px;
-  left: 167px; 
+  left: 167px;
   font-weight: 700;
   color: var(--white);
   font-size: 55.9px;
@@ -1611,4 +1616,790 @@
   letter-spacing: -1.59px;
   line-height: normal;
   text-decoration: underline;
+}
+
+/* RESPONSIVIDADE MELHORADA */
+
+/* Mobile First - 320px a 767px */
+@media (max-width: 767px) {
+  .container {
+    display: block;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  .container .landing-page {
+    padding: 0;
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Reset de posicionamentos absolutos para mobile */
+  .container * {
+    position: static !important;
+  }
+
+  /* Backgrounds e containers principais */
+  .container .rectangle,
+  .container .rectangle-3,
+  .container .div,
+  .container .rectangle-2,
+  .container .rectangle-4 {
+    position: fixed !important;
+    width: 100vw;
+    z-index: -1;
+  }
+
+  /* === SEÇÃO 1: HERO === */
+  .container .hero-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15px;
+    background: linear-gradient(270deg, rgba(49, 161, 150, 1) 0%, rgba(42, 156, 145, 1) 100%);
+    position: relative;
+    z-index: 1;
+  }
+
+  .container .logo-01 {
+    width: 80px;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .container .cuidadora-de-idosos {
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 20px 0;
+    color: var(--white);
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .container .text-wrapper-7 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: var(--white);
+    font-style: italic;
+    background-color: var(--teal-dark-100);
+    padding: 8px 16px;
+    border-radius: 7px;
+  }
+
+  .container .o-melhor-e-mais {
+    font-size: 16px;
+    margin: 20px 0;
+    color: var(--white);
+    text-align: center;
+  }
+
+  .container .MG {
+    width: 250px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 15px;
+  }
+
+  .container .logo-erlaine-rezende {
+    width: 100px;
+    height: auto;
+    margin: 15px 0;
+  }
+
+  /* Ocultar elementos decorativos no mobile */
+  .container .rectangle-5,
+  .container .rectangle-6,
+  .container .rectangle-9,
+  .container .rectangle-11,
+  .container .rectangle-12,
+  .container .rectangle-13,
+  .container .rectangle-14,
+  .container .rectangle-15,
+  .container .rectangle-16,
+  .container .img {
+    display: none;
+  }
+
+  /* === SEÇÃO 2: CONHEÇA ERLAINE === */
+  .container .about-section {
+    padding: 40px 15px;
+    text-align: center;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .conhe-a-erlaine {
+    font-size: 36px;
+    margin: 20px 0;
+    color: var(--teal-primary);
+    font-weight: 700;
+  }
+
+  .container .rectangle-17 {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 15px;
+  }
+
+  .container .p {
+    width: 100%;
+    max-width: 350px;
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    color: var(--gray-warm-100);
+    line-height: 1.5;
+  }
+
+  .container .rectangle-18 {
+    width: 80%;
+    height: 4px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(96, 210, 199, 1) 100%);
+    border-radius: 6px;
+    margin: 20px auto;
+  }
+
+  /* Ocultar elementos decorativos */
+  .container .rectangle-7,
+  .container .rectangle-8 {
+    display: none;
+  }
+
+  /* === SEÇÃO 3: PARA QUEM É O CURSO === */
+  .container .target-audience {
+    padding: 40px 15px;
+    background-color: var(--teal-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container .para-quem-o-curso {
+    font-size: 32px;
+    color: var(--white);
+    margin: 20px 0;
+    font-weight: 700;
+  }
+
+  .container .text-wrapper-2 {
+    width: 100%;
+    max-width: 350px;
+    color: var(--white);
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 1.5;
+  }
+
+  .container .rectangle-10 {
+    width: 90%;
+    height: 80px;
+    background-color: var(--teal-dark-100);
+    border-radius: 21.9px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container .rounded-rectangle-6 {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 15px;
+  }
+
+  /* Cards dos grupos reorganizados */
+  .container .group,
+  .container .group-2,
+  .container .group-3 {
+    width: 100%;
+    max-width: 300px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container .rounded-rectangle-3,
+  .container .rounded-rectangle-5 {
+    width: 100%;
+    height: 200px;
+    background-color: var(--teal-light-100);
+    border-radius: 35px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container .rounded-rectangle-4 {
+    width: 200px;
+    height: 60px;
+    background-color: var(--teal-dark-100);
+    border-radius: 35px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Imagens dos cards */
+  .container .erlaine,
+  .container .erlaine-2,
+  .container .erlaine-3 {
+    width: 150px;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 10px;
+  }
+
+  /* Textos dos cards */
+  .container .n-o-deixe-a,
+  .container .quer-aprender-dicas,
+  .container .o-que-o-cuidador-de {
+    font-size: 20px;
+    text-align: center;
+    margin: 15px 0;
+    color: var(--teal-dark-100);
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .container .text-wrapper-13 {
+    font-size: 14px;
+    color: var(--teal-dark-100);
+    margin: 10px 0;
+    font-style: italic;
+  }
+
+  .container .text-wrapper-8,
+  .container .text-wrapper-9,
+  .container .text-wrapper-10 {
+    display: inline-block;
+    background-color: var(--teal-dark-100);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 25px;
+    text-decoration: underline;
+    margin: 10px;
+    font-size: 14px;
+  }
+
+  /* Ocultar elementos decorativos */
+  .container .rectangle-19,
+  .container .rectangle-20,
+  .container .vector,
+  .container .vector-2,
+  .container .vector-3,
+  .container .vector-4 {
+    display: none;
+  }
+
+  /* === SEÇÃO 4: INVESTIMENTO === */
+  .container .investment-info {
+    padding: 40px 15px;
+    background-color: var(--teal-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container .entenda-mais-sobre-o {
+    font-size: 28px;
+    margin: 20px 0;
+    color: var(--teal-primary);
+    font-weight: 700;
+  }
+
+  .container .text-wrapper-3 {
+    width: 100%;
+    max-width: 350px;
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    color: var(--gray-medium-100);
+    line-height: 1.5;
+  }
+
+  .container .erlaine-4 {
+    width: 220px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 15px;
+  }
+
+  .container .clique-e-desbloqueie {
+    font-size: 18px;
+    margin: 20px 0;
+    color: var(--white);
+    background-color: var(--teal-primary);
+    padding: 10px 20px;
+    border-radius: 35px;
+    text-decoration: underline;
+  }
+
+  /* Ocultar elementos decorativos */
+  .container .rounded-rectangle,
+  .container .rounded-rectangle-2 {
+    display: none;
+  }
+
+  /* === SEÇÃO 5: O QUE VOCÊ RECEBE === */
+  .container .course-benefits {
+    padding: 40px 15px;
+    background-color: var(--teal-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .group-9 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .rectangle-29 {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    background-color: var(--teal-pale);
+    border-radius: 20px;
+    border: 3px solid var(--teal-light-100);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container .text-wrapper-21 {
+    font-size: 24px;
+    color: var(--teal-dark-100);
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+  }
+
+  .container .rectangle-24,
+  .container .rectangle-25,
+  .container .rectangle-26,
+  .container .rectangle-27,
+  .container .rectangle-28 {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    background-color: var(--teal-600);
+    border-radius: 14.4px;
+    margin: 15px 0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .container .mais-de-aulas-ao,
+  .container .text-wrapper-20,
+  .container .element-m-dulos-com-aulas,
+  .container .comunidade-exclusiva,
+  .container .suporte-e-contato {
+    font-size: 16px;
+    color: var(--white);
+    margin: 0;
+    flex: 1;
+    text-align: left;
+  }
+
+  .container .vector-5,
+  .container .vector-6,
+  .container .vector-7,
+  .container .vector-8,
+  .container .vector-9 {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  /* === SEÇÃO 5.2: DEPOIMENTOS === */
+  .container .group-4 {
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .rectangle-22 {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    background-color: var(--teal-pale);
+    border-radius: 20px;
+    border: 3px solid var(--teal-light-100);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container .veja-o-que-est-o {
+    font-size: 22px;
+    color: var(--teal-dark-100);
+    text-align: center;
+    margin: 0;
+  }
+
+  .container .rectangle-21 {
+    width: 90%;
+    max-width: 400px;
+    background-color: var(--teal-pale);
+    border-radius: 19px;
+    border: 3px solid var(--teal-light-100);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .container .group-5,
+  .container .group-6,
+  .container .group-7 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .container .text-wrapper-16 {
+    font-size: 12px;
+    color: var(--teal-dark-100);
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  .container .ellipse {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
+
+  .container .text-wrapper-17 {
+    font-size: 12px;
+    color: var(--teal-dark-100);
+    font-weight: 500;
+  }
+
+  /* Ocultar controles de navegação no mobile */
+  .container .dribbble-light,
+  .container .icons-wrapper,
+  .container .group-8 {
+    display: none;
+  }
+
+  /* === SEÇÃO 6: OFERTAS === */
+  .container .pricing {
+    padding: 40px 15px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .rectangle-23 {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    background-color: var(--teal-dark-100);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container .group-10 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .text-wrapper-24 {
+    font-size: 36px;
+    color: var(--teal-pale);
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+  }
+
+  .container .vector-10 {
+    width: 30px;
+    height: 30px;
+    margin: 10px 0;
+  }
+
+  .container .group-11 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  /* Cards de preços */
+  .container .rectangle-30,
+  .container .rectangle-32,
+  .container .rectangle-34 {
+    width: 90%;
+    max-width: 320px;
+    height: auto;
+    background-color: var(--teal-dark-300);
+    border-radius: 31px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0px 10px 7.7px 2px var(--black-transparent-8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container .rectangle-31,
+  .container .rectangle-33,
+  .container .rectangle-35 {
+    width: 100%;
+    height: auto;
+    background-color: var(--teal-dark-200);
+    border-radius: 25px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .container .text-wrapper-25,
+  .container .text-wrapper-26,
+  .container .text-wrapper-29 {
+    font-size: 24px;
+    color: var(--white);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .container .text-wrapper-27,
+  .container .text-wrapper-28 {
+    font-size: 14px;
+    color: var(--white);
+    font-style: italic;
+    margin: 5px 0 15px;
+  }
+
+  .container .de-r-por-r,
+  .container .de-r-por-r-2,
+  .container .de-r-por-r-3 {
+    font-size: 20px;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .container .element-de-r,
+  .container .element-x-de-r {
+    font-size: 16px;
+    margin: 10px 0 20px;
+    color: var(--white);
+  }
+
+  .container .rounded-rectangle-7,
+  .container .rounded-rectangle-8,
+  .container .rounded-rectangle-9 {
+    width: 200px;
+    height: 50px;
+    background-color: var(--teal-dark-100);
+    border-radius: 31px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container .text-wrapper-37,
+  .container .text-wrapper-38,
+  .container .text-wrapper-39 {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  /* Ocultar elementos decorativos */
+  .container .rectangle-36,
+  .container .rectangle-37,
+  .container .rectangle-38 {
+    display: none;
+  }
+
+  /* === SEÇÃO 7: BÔNUS === */
+  .container .bonus {
+    padding: 40px 15px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .group-12 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .rectangle-41 {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    background-color: var(--teal-light-100);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container .text-wrapper-46 {
+    font-size: 32px;
+    color: var(--teal-dark-100);
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+  }
+
+  .container .rectangle-39 {
+    width: 90%;
+    max-width: 400px;
+    background-color: var(--teal-dark-200);
+    border-radius: 42.69px;
+    padding: 20px;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .container .text-wrapper-44 {
+    font-size: 24px;
+    color: var(--cyan-bright);
+    font-weight: 700;
+    font-style: italic;
+    margin: 0 0 15px;
+  }
+
+  .container .ingresso-para-o {
+    font-size: 16px;
+    color: var(--white);
+    text-align: center;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .container .rectangle-40 {
+    width: 90%;
+    max-width: 400px;
+    background-color: var(--teal-pale-200);
+    border-radius: 42.69px;
+    padding: 20px;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .container .text-wrapper-45 {
+    font-size: 24px;
+    color: var(--teal-dark-100);
+    font-weight: 700;
+    font-style: italic;
+    margin: 0 0 15px;
+  }
+
+  .container .kit-exclusivo-com {
+    font-size: 16px;
+    color: var(--teal-dark-100);
+    text-align: center;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .container .rectangle-42 {
+    width: 70%;
+    max-width: 280px;
+    height: auto;
+    background-color: var(--teal-dark-100);
+    border-radius: 29px;
+    padding: 15px;
+    margin: 20px 0;
+  }
+
+  .container .text-wrapper-47 {
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0;
+  }
+
+  /* === FOOTER === */
+  .container .footer {
+    padding: 30px 15px;
+    background-color: var(--teal-dark-100);
+    text-align: center;
+  }
+
+  .container .instituto {
+    font-size: 12px;
+    color: var(--white);
+    text-align: center;
+    margin: 15px 0;
+    line-height: 1.4;
+  }
+
+  .container .text-wrapper-6 {
+    font-size: 10px;
+    color: var(--white);
+    text-align: center;
+    margin: 15px 0;
+  }
+}
+
+/* Tablet - 768px a 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .landing-page {
+    padding: 0 30px;
+  }
+  
+  .container .cuidadora-de-idosos {
+    font-size: 48px;
+  }
+  
+  .container .text-wrapper-7 {
+    font-size: 22px;
+  }
+
+  /* Ajustes para tablet podem ser adicionados aqui */
+  .container .group,
+  .container .group-2,
+  .container .group-3 {
+    width: 45%;
+    display: inline-block;
+    margin: 2.5%;
+  }
+}
+
+/* Desktop - 1024px+ */
+@media (min-width: 1024px) {
+  /* CSS original já está otimizado para desktop */
 }
