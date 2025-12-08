@@ -1,6 +1,6 @@
 -fazer a escrita
 -renomar imagens
--fazer a parte de comentários com rolagem (sessão Veja o que estão falando sobre)
+-continuar a parte de comentários com rolagem (sessão Veja o que estão falando sobre)
 -fazer pagina responsiva com o celular - melhorar 
 -inserir os 4 links direto para o youtube
 -ver porque o <img class="vector-2" src="./images/close.png" />
