@@ -57,7 +57,4 @@ document.addEventListener('DOMContentLoaded', function () {
             mostrarComentarios(indiceAtual);
         });
     });
-
-    // Auto-play opcional (descomente se quiser)
-    // setInterval(proximosComentarios, 5000);
 });
