@@ -1,31 +1,50 @@
 @import url('./global.css');
 @import url('./colors.css');
 
+a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--white);
+}
+
+a:hover {
+  color: var(--white);
+  opacity: 0.8;
+}
 .container {
   overflow-x: hidden;
   width: 100%;
   min-height: 100vh;
   display: flex;
-  justify-content: center; /* Centralizar horizontalmente */
+  justify-content: center;
+  /* Centralizar horizontalmente */
 }
 
 .container .landing-page {
   width: 100%;
-  max-width: 1320px; /* Largura máxima para não ficar muito esticado */
+  max-width: 1320px;
+  /* Largura máxima para não ficar muito esticado */
   min-height: 100vh;
   position: relative;
-  margin: 0 auto; /* Centralizar */
+  margin: 0 auto;
+  /* Centralizar */
 }
 
 /* Backgrounds ocupam toda a tela */
 .container .rectangle {
-  position: fixed; /* Fixo para ocupar toda tela */
+  position: fixed;
+  /* Fixo para ocupar toda tela */
   top: 0;
   left: 0;
-  width: 100vw; /* Largura da viewport */
+  width: 100vw;
+  /* Largura da viewport */
   min-height: 100vh;
   background-color: var(--white);
-  z-index: -1; /* Atrás do conteúdo */
+  z-index: -1;
+  /* Atrás do conteúdo */
 }
 
 .container .div {
@@ -539,7 +558,7 @@
 .container .rectangle-19 {
   position: absolute;
   top: 2027px;
-  left: 122px;
+  left: 126px;
   width: 237px;
   height: 45px;
   background-color: var(--teal-pale);
@@ -1625,7 +1644,7 @@
     width: 100vw;
     overflow-x: hidden;
   }
-  
+
   .container .landing-page {
     padding: 0;
     width: 100%;
@@ -2378,11 +2397,11 @@
   .container .landing-page {
     padding: 0 30px;
   }
-  
+
   .container .cuidadora-de-idosos {
     font-size: 48px;
   }
-  
+
   .container .text-wrapper-7 {
     font-size: 22px;
   }
@@ -2401,99 +2420,99 @@
 @media (min-width: 1024px) {
   /* CSS original já está otimizado para desktop */
 }
+
 /* ...existing code... */
 
 /* Carrossel de comentários simples */
 .comentarios-container {
-    position: relative;
-    height: 500px; /* Altura fixa para manter layout */
+  position: relative;
+  height: 500px;
+  /* Altura fixa para manter layout */
 }
 
 .comentario-item {
-    position: absolute;
-    width: 266px;
-    height: 155px;
-    display: none; /* Esconde todos por padrão */
-    transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  width: 266px;
+  height: 155px;
+  display: none;
+  /* Esconde todos por padrão */
+  transition: opacity 0.3s ease-in-out;
 }
 
 .comentario-item.active {
-    display: block; /* Mostra apenas os ativos */
+  display: block;
+  /* Mostra apenas os ativos */
 }
 
 /* Posicionamento dos comentários visíveis */
 .comentario-item.active:nth-child(1) {
-    top: 204px;
-    left: 89px;
+  top: 204px;
+  left: 89px;
 }
 
 .comentario-item.active:nth-child(2) {
-    top: 204px;
-    left: 433px;
+  top: 204px;
+  left: 433px;
 }
 
 .comentario-item.active:nth-child(3) {
-    top: 204px;
-    left: 778px;
+  top: 204px;
+  left: 778px;
 }
 
 /* Melhorar interação das setas */
 .dribbble-light,
 .icons-wrapper {
-    cursor: pointer;
-    transition: transform 0.2s ease;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
 .dribbble-light:hover,
 .icons-wrapper:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .dribbble-light:active,
 .icons-wrapper:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 /* Indicadores interativos */
 .group-8 .indicador {
-    cursor: pointer;
-    transition: all 0.3s ease;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .group-8 .indicador:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 /* Responsividade para o carrossel */
 @media (max-width: 767px) {
-    .comentario-item.active:nth-child(2),
-    .comentario-item.active:nth-child(3) {
-        display: none; /* Em mobile, mostra apenas 1 */
-    }
-    
-    .comentario-item.active:nth-child(1) {
-        left: 20px;
-        width: calc(100% - 40px);
-    }
+
+  .comentario-item.active:nth-child(2),
+  .comentario-item.active:nth-child(3) {
+    display: none;
+    /* Em mobile, mostra apenas 1 */
+  }
+
+  .comentario-item.active:nth-child(1) {
+    left: 20px;
+    width: calc(100% - 40px);
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .comentario-item.active:nth-child(3) {
-        display: none; /* Em tablet, mostra apenas 2 */
-    }
-    
-    .comentario-item.active:nth-child(1) {
-        left: 50px;
-    }
-    
-    .comentario-item.active:nth-child(2) {
-        left: 350px;
-    }
+  .comentario-item.active:nth-child(3) {
+    display: none;
+    /* Em tablet, mostra apenas 2 */
+  }
+
+  .comentario-item.active:nth-child(1) {
+    left: 50px;
+  }
+
+  .comentario-item.active:nth-child(2) {
+    left: 350px;
+  }
 }
-
-
-
-
-
-
-
