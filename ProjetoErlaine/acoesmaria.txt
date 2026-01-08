@@ -1,20 +1,10 @@
--pegar a fonte
--melhorar a escrita
+-fazer a escrita
 -renomar imagens
--descobrir que image é essa:<img class="img" src="img/rectangle-54.png" />
-- fazer a parte de comentários com rolagem (sessão Veja o que estão falando sobre)
--fazer pagina responsiva com o celular
--arrumar arquivo colors.css
+-continuar a parte de comentários com rolagem (sessão Veja o que estão falando sobre)
+-fazer pagina responsiva com o celular - melhorar 
 -inserir os 4 links direto para o youtube
--humanizade 2.0 nao está na fonte correta
--ver porque o     <img class="vector-2" src="./images/close.png" />
+-ver porque o <img class="vector-2" src="./images/close.png" />
             <img class="vector-3" src="./images/close.png" />
             <img class="vector-4" src="./images/close.png"  nao vai
 
-
-
-
-
-
-
-27.11 continuar pela parte de ofertas e bonus
+-aumentar um pouco do container 'insegurança'
